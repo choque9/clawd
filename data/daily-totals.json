@@ -3,11 +3,11 @@
   "days": {
     "2026-01-28": {
       "facturas": 0,
-      "transacciones": 286700,
+      "transacciones": 348900,
       "unknown": 0,
       "count": {
         "facturas": 0,
-        "transacciones": 1,
+        "transacciones": 2,
         "unknown": 0
       }
     }
