@@ -2,3 +2,6 @@ node_modules/
 outbox/
 inbox/
 .DS_Store
+
+# tesseract language data (generated)
+*.traineddata

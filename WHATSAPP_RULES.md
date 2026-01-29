@@ -10,8 +10,9 @@
 - **Transaccion**: a bank movement proof. Report the transaction amount and **force it positive** (sometimes screenshots show debits as negative even though it's income for William).
 
 ## Reply policy (critical)
-- **Never reply** in the originating chat (DM or group).
+- **Never reply** in the originating chat (DM or group), even if they ask questions.
 - Only send notifications to William's number: **+573126027280**.
+- If the sender is not William, your response in that chat must be **NO_REPLY**.
 
 ## Notification content
 When media is classified as Factura or Transaccion, send William a message including:
@@ -23,10 +24,12 @@ When media is classified as Factura or Transaccion, send William a message inclu
   - Total TRANSACCIONES today
 
 ## Persistence
-- Maintain daily totals per day (America/Bogota) across restarts.
+- Maintain daily totals per day (America/Bogota) across restarts in `data/daily-totals.json`.
 - Append each detected item to:
   - `data/facturas.csv`
   - `data/transacciones.csv`
+  - `data/no_clasificadas.csv`
+- Deduplicate by `data/seen.json` (avoid double counting same media).
 
 Each row includes ISO date, source (dm/group), sender id (if available), category, value, currency, notes, and a media file reference.
 

@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "description": "Clawdbot workspace automation",
   "scripts": {
-    "wa:run": "node src/whatsapp-media-classifier.js",
+    "wa:process": "node src/wa-process-media.js",
     "test": "node src/whatsapp-media-classifier.test.js"
   },
   "dependencies": {
