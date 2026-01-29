@@ -3,10 +3,11 @@
 ## Scope
 - Trigger: any inbound WhatsApp message (DM or group).
 - Only act when the inbound message contains **media** of type **image** or **pdf/document**.
+- Process **everything** (do not ignore items). If unsure, classify as `UNKNOWN`.
 
 ## Classification
 - **Factura**: a purchase invoice/receipt for products/services (someone bought products).
-- **Transaccion**: a bank movement showing money **entering** William's account (credit/abono/consignación/pago recibido).
+- **Transaccion**: a bank movement proof. Report the transaction amount and **force it positive** (sometimes screenshots show debits as negative even though it's income for William).
 
 ## Reply policy (critical)
 - **Never reply** in the originating chat (DM or group).
