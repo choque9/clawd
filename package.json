@@ -1,0 +1,15 @@
+{
+  "name": "clawd",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Clawdbot workspace automation",
+  "scripts": {
+    "wa:run": "node src/whatsapp-media-classifier.js",
+    "test": "node src/whatsapp-media-classifier.test.js"
+  },
+  "dependencies": {
+    "tesseract.js": "^5.1.0",
+    "pdfjs-dist": "^4.10.38"
+  }
+}
