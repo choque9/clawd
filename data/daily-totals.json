@@ -2,13 +2,13 @@
   "timezone": "America/Bogota",
   "days": {
     "2026-01-28": {
-      "facturas": 130028,
+      "facturas": 160758,
       "transacciones": 635600,
       "unknown": 0,
       "count": {
-        "facturas": 1,
+        "facturas": 2,
         "transacciones": 3,
-        "unknown": 1
+        "unknown": 2
       }
     }
   }
